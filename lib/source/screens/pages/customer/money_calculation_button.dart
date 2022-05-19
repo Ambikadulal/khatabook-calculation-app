@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../calculation/calculation_page.dart';
+
 class MoneyCalculationButton extends StatelessWidget {
   static const String routeName = "money-cal";
 
@@ -23,7 +25,7 @@ class MoneyCalculationButton extends StatelessWidget {
                 buttonTheme: ButtonTheme.of(context).copyWith(materialTapTargetSize: MaterialTapTargetSize.shrinkWrap)),
             child: ElevatedButton(
               style: style,
-              onPressed: () {},
+              onPressed: () => Navigator.pushNamed(context, CalculationPage.routeName),
               child: const Text(
                 "YOU GAVE रु ",
                 style: TextStyle(color: Colors.white),
@@ -35,7 +37,7 @@ class MoneyCalculationButton extends StatelessWidget {
                 buttonTheme: ButtonTheme.of(context).copyWith(materialTapTargetSize: MaterialTapTargetSize.shrinkWrap)),
             child: ElevatedButton(
               style: style,
-              onPressed: () {},
+              onPressed: () => Navigator.pushNamed(context, CalculationPage.routeName),
               child: const Text(
                 "YOU GOT रु",
               ),

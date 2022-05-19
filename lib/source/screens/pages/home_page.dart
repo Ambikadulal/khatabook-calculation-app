@@ -28,8 +28,8 @@ class _HomePageState extends State<HomePage> {
   //     id: 2,
   //   )
   // ];
-  var _currentTab = TabItem.home;
 
+  dynamic _currentTab = TabItem.home;
   void _selectTab(TabItem tabItem) {
     setState(() => _currentTab = tabItem);
   }
@@ -97,11 +97,15 @@ class HomePageBody extends StatefulWidget {
 }
 
 class _HomePageBodyState extends State<HomePageBody> {
+  // late final List<String> operations;
+
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        _buildBody(context),
+        _buildBody(
+          context,
+        ),
         Padding(
           padding: const EdgeInsets.all(15.0),
           child: Text(
@@ -167,7 +171,9 @@ class _HomePageBodyState extends State<HomePageBody> {
   }
 }
 
-Widget _buildBody(BuildContext context) {
+Widget _buildBody(
+  BuildContext context,
+) {
   return Stack(
     children: [
       Container(
@@ -189,8 +195,6 @@ Widget _buildBody(BuildContext context) {
         ]),
         child: Column(
           children: [
-            //Consumer<Credits>(builder: (context, data, _) {
-            //  return
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -200,7 +204,8 @@ Widget _buildBody(BuildContext context) {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: const [
                       Text(
-                        'रु 0.0',
+                        // 'रु ${Calculator.parseString(operations.last)} ',
+                        'रु  ',
                         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0, color: Colors.lightGreen),
                       ),
                       Text("You will gave")
@@ -222,8 +227,6 @@ Widget _buildBody(BuildContext context) {
                 ),
               ],
             ),
-            //}
-            //),
             const Divider(
               height: 5,
               thickness: 1.5,

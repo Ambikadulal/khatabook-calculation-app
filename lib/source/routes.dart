@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khatabook_yarsalab_task/source/screens/pages/calculation/calculation_page.dart';
 import 'package:khatabook_yarsalab_task/source/screens/pages/customer/add_customer.dart';
 import 'package:khatabook_yarsalab_task/source/screens/pages/customer/money_calculation_button.dart';
 import 'package:khatabook_yarsalab_task/source/screens/pages/home_page.dart';
@@ -14,6 +15,9 @@ class RouteGenerator {
 
       case MoneyCalculationButton.routeName:
         return MaterialPageRoute(builder: (_) => const MoneyCalculationButton());
+
+      case CalculationPage.routeName:
+        return MaterialPageRoute(builder: (_) => const CalculationPage());
     }
 
     return MaterialPageRoute(builder: (_) => const Scaffold(body: Center(child: Text("Error, Page not found"))));
