@@ -18,7 +18,6 @@ class CalculatorRow extends StatelessWidget {
 
   List<Widget> rowButtons() {
     List<Widget> rowButtons = [];
-
     for (var buttonText in buttons) {
       rowButtons.add(
         CalculatorButton(
@@ -27,7 +26,6 @@ class CalculatorRow extends StatelessWidget {
         ),
       );
     }
-
     return rowButtons;
   }
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:khatabook_yarsalab_task/source/screens/pages/calculation/calculation_page.dart';
 import 'package:khatabook_yarsalab_task/source/screens/pages/customer/add_customer.dart';
 import 'package:khatabook_yarsalab_task/source/screens/pages/customer/money_calculation_button.dart';
-import 'package:khatabook_yarsalab_task/source/screens/pages/home_page.dart';
+import 'package:khatabook_yarsalab_task/source/screens/pages/home_page/home_page.dart';
 
 class RouteGenerator {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {

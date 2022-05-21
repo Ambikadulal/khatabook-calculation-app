@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:khatabook_yarsalab_task/source/database/local_database/demo_database.dart';
 import 'package:khatabook_yarsalab_task/source/model/client_model.dart';
 
 import '../../components/text_field/input_text_field.dart';
-import 'money_calculation_button.dart';
 
 class AddCustomer extends StatefulWidget {
   static const String routeName = "add-customer";
@@ -20,18 +18,13 @@ class AddCustomer extends StatefulWidget {
 class _AddCustomerState extends State<AddCustomer> {
   late final TextEditingController firstNameTextEditingController;
   late final TextEditingController lastNameTextEditingController;
-  // late FocusNode nameFocusNode;
-  // late FocusNode addressFocusNode;
 
-  Client? model;
   List<Client>? modelList;
 
   @override
   void initState() {
     firstNameTextEditingController = TextEditingController();
     lastNameTextEditingController = TextEditingController();
-    // nameFocusNode = FocusNode();
-    // addressFocusNode = FocusNode();
     super.initState();
   }
 
@@ -60,8 +53,7 @@ class _AddCustomerState extends State<AddCustomer> {
       firstNameTextEditingController.text = "";
       lastNameTextEditingController.text = "";
     });
-    // Navigator.of(context).pop();
-    Navigator.pushNamed(context, MoneyCalculationButton.routeName);
+    Navigator.of(context).pop();
   }
 
   @override

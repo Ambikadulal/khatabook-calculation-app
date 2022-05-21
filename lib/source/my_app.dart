@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:khatabook_yarsalab_task/source/routes.dart';
-import 'package:khatabook_yarsalab_task/source/screens/pages/home_page.dart';
+import 'package:khatabook_yarsalab_task/source/screens/pages/home_page/home_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);

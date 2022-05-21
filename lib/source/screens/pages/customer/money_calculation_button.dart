@@ -9,13 +9,15 @@ class MoneyCalculationButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle style =
+    final ButtonStyle styleGave =
         ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 14), primary: Colors.redAccent);
+    final ButtonStyle styleGot =
+        ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 14), primary: Colors.green);
     return Scaffold(
       appBar: AppBar(
-        title: const Text("some one"),
+        title: const Text("Jhone  Doe"),
       ),
-      body: Container(),
+      body: const Center(child: Text("Hello Jhone Doe Welcome!")),
       bottomNavigationBar: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -24,7 +26,7 @@ class MoneyCalculationButton extends StatelessWidget {
             data: Theme.of(context).copyWith(
                 buttonTheme: ButtonTheme.of(context).copyWith(materialTapTargetSize: MaterialTapTargetSize.shrinkWrap)),
             child: ElevatedButton(
-              style: style,
+              style: styleGave,
               onPressed: () => Navigator.pushNamed(context, CalculationPage.routeName),
               child: const Text(
                 "YOU GAVE रु ",
@@ -36,7 +38,7 @@ class MoneyCalculationButton extends StatelessWidget {
             data: Theme.of(context).copyWith(
                 buttonTheme: ButtonTheme.of(context).copyWith(materialTapTargetSize: MaterialTapTargetSize.shrinkWrap)),
             child: ElevatedButton(
-              style: style,
+              style: styleGot,
               onPressed: () => Navigator.pushNamed(context, CalculationPage.routeName),
               child: const Text(
                 "YOU GOT रु",
