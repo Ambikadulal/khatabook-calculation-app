@@ -8,3 +8,5 @@ We added the customer's first and last name to the customer id, maintained the C
 ![ss4](https://user-images.githubusercontent.com/55906788/169643436-80368e13-6954-402a-a674-9a2b42ed4ea4.jpg)
 ![ss5](https://user-images.githubusercontent.com/55906788/169643438-1ea4a8c0-b45c-4076-bfae-962eff9400d6.jpg)
 ![ss6](https://user-images.githubusercontent.com/55906788/169643439-e19c8cc8-9327-4702-8700-2d8a78e21d4a.jpg)
+
+# I attempted to implement all calculating functions without using a package. I hope you enjoy it.
