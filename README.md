@@ -1,4 +1,4 @@
-# khatabook_yarsalab_task
+# khatabook_calculation_app
 
 We added the customer's first and last name to the customer id, maintained the CRUD function, initDB, and the Client model, and developed a simple arithmetic calculation using two variables a and b.
 
