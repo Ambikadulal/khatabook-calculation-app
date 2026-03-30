@@ -1,6 +1,6 @@
 # khatabook_calculation_app
 
-We added the customer's first and last name to the customer id, maintained the CRUD function, initDB, and the Client model, and developed a simple arithmetic calculation using two variables a and b.
+We added the customer's first and last name to the customer id, maintained the CRUD function, initDB, and the Client model, and developed a simple arithmetic calculation using two variables, a and b.
 
 ![ss1](https://user-images.githubusercontent.com/55906788/169643431-e24836d2-38c8-4e80-b9c2-044434ddc3e5.jpg)
 ![ss2](https://user-images.githubusercontent.com/55906788/169643434-fe5a5aa8-92c2-4081-9f95-cd9129c8ef00.jpg)
